@@ -15,4 +15,9 @@ class test extends Controller
     {
     	return view('second');
     }
+
+    public function get_test_page()
+    {
+    	return view('test');
+    }
 }
