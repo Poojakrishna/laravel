@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('test', 'test@index');
-Route::get('experiment', 'test@get_home_page');
+Route::get('getexperiment', 'test@get_home_page');
+Route::post('experiment', 'test@get_home_data');
