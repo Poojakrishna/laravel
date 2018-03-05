@@ -83,14 +83,11 @@
                 </div>
 
                 <div class="links">
-                    {{ Form::open(array('url' => 'experiment')) }}
-                    {{ Html::link('/login', 'Second', array('id' => 'second'), true)}}
-                    {{ Form::label('name', 'Enter first number', array('class' => 'mylabel')) }}
-                    {{ Form::text('first', '', array('class' => 'field')) }} 
-                    {{ Form::label('name', 'Enter Second number', array('class' => 'mylabel')) }}
-                    {{ Form::text('second', '', array('class' => 'field')) }}
-                    {{ Form::submit('Save', array('class' => 'btn')) }} 
-                    {{Form::close()}}
+                    <!-- {{ Form::open(array('url' => 'sendmail')) }} -->
+                    {{ Html::link('/sendmail', 'Send mail', array('id' => 'second'), true)}}
+                   
+                    <!-- {{ Form::submit('SEND', array('class' => 'btn')) }} --> 
+                   <!--  {{Form::close()}} -->
                 </div>
             </div>
         </div>

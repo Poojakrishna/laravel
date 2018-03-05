@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('test', 'test@index');
 Route::get('getexperiment', 'test@get_home_page');
 Route::post('experiment', 'test@get_home_data');
+Route::get('sendmail', 'test@store');
+Route::get('Queuetest',['as' => 'Queuetest', 'uses'=>'customerController@index']);
+Route::post('Queuetestpost',['as' => 'Queuetestpost', 'uses'=> 'customerController@store']);

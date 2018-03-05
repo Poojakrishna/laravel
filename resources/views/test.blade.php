@@ -9,6 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!-- Styles -->
         <style>
@@ -62,6 +65,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
         </style>
     </head>
     <body>
@@ -79,13 +83,22 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Experiment 
+                    Customer 
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                   
-                </div>
+               {{ Form::open(array('url' => 'Queuetestpost')) }}
+                    
+                            <div class="form-group">
+                                <label>Customer name</label>
+                                <input type="text" name="name" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Salary</label>
+                                <input type="text" name="salary" class="form-control">
+                            </div>
+                        
+                        <button type="submit" class="btn btn-success" >Submit </button>
+                      
+                {{Form::close()}}
             </div>
         </div>
     </body>
